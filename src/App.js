@@ -2,6 +2,7 @@ import {Component} from 'react';
 import axios from 'axios';
 import Movie from './Components/Movie';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 import './App.css';
 
 class App extends Component {
@@ -46,7 +47,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <Header className="Header"/>
+        <div className="header"><Header/></div>
         <input value={this.state.title} name='title' placeholder='Title' onChange={e => this.handleInputs(e)}/><br></br>
         <input value ={this.state.director} name='director' placeholder="Director" onChange={e => this.handleInputs(e)}/><br></br>
         <button onClick={this.addMovie}>Add Movie</button>
@@ -55,6 +56,7 @@ class App extends Component {
           <Movie key={movie.id} movie={movie} getMoviesFn={this.getMovies}/>
         ))}
         </section>
+        <div className="footer"><Footer /></div>
       </div>
     );
   }
