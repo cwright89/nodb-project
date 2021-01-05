@@ -48,9 +48,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header"><Header/></div>
-        <input value={this.state.title} name='title' placeholder='Title' onChange={e => this.handleInputs(e)}/><br></br>
-        <input value ={this.state.director} name='director' placeholder="Director" onChange={e => this.handleInputs(e)}/><br></br>
-        <button onClick={this.addMovie}>Add Movie</button>
+        <section className="inputsection">
+        <input className="input1" value={this.state.title} name='title' placeholder='Title' onChange={e => this.handleInputs(e)}/><br></br>
+        <input className="input1" value ={this.state.director} name='director' placeholder="Director" onChange={e => this.handleInputs(e)}/><br></br>
+        <button className="button1"onClick={this.addMovie}>Add Movie</button>
+        </section>
         <section className="list-section">
         {this.state.movies.map(movie => (
           <Movie key={movie.id} movie={movie} getMoviesFn={this.getMovies}/>

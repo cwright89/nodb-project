@@ -26,7 +26,13 @@
   margin-top: 0%;
 }
 
+.inputsection{
+  margin-top: 60px;
+  
+}
+
 .list-section {
+  margin-top: -80px;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -34,6 +40,47 @@
   align-self: auto;
   flex-wrap: wrap;
   align-content: space-evenly;
+  
+
+}
+.button1{
+ margin-top: 5px;
+    background-color: transparent;
+    border: solid;
+    border-color: white;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-width: thin;
+}
+
+.button2{
+  background: transparent;
+  border:solid;
+  border-color: white;
+  color: white;
+  padding:5px 10px;
+  margin: 5px;
+  border-width: thin;
+
+  
+}
+
+.button1:hover{
+  background-color: #DDDDDD;
+  color: #111111;
+}
+
+.button2:hover{
+  background-color: #DDDDDD;
+  color: #111111;
+}
+
+.input1{
+  margin-top: 2px;
   
 
 }

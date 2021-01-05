@@ -1,5 +1,5 @@
-const movies = [{id: 0, title:'The Personal History of David Copperfield', director: 'Armando Iannucci'}];
-let id = 1;
+const movies = [{id: 0, title:'The Personal History of David Copperfield', director: 'Armando Iannucci'}, {id: 1, title:'Tenet', director: 'Christopher Nolan'}, {id: 2, title: 'Soul', director: 'Pete Doctor'}];
+let id = 3;
 
 module.exports = {
     getMovies: (req, res) => {

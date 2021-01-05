@@ -50,8 +50,8 @@ class Movie extends Component {
                 {editView
                 ? (
                     <section>
-                        <input value={title} name='title' onChange={e => this.handleInputs(e)}/>
-                        <input value={director} name='title' onChange={e => this.handleInputs(e)}/>
+                        <input  value={title} name='title' onChange={e => this.handleInputs(e)}/>
+                        <input  value={director} name='title' onChange={e => this.handleInputs(e)}/>
                         <button onClick={this.updateMovie}>Submit</button>
                     </section>
                 )
@@ -59,8 +59,8 @@ class Movie extends Component {
                     <section>
                         <h2>{movie.title}</h2>
                         <h4>{movie.director}</h4>
-                        <button onClick={this.toggleView}>Edit</button>
-                        <button onClick={this.deleteMovie}>Delete</button>
+                        <button className="button2" onClick={this.toggleView}>Edit</button>
+                        <button className="button2" onClick={this.deleteMovie}>Delete</button>
                     </section>
                 )}
             </section>
