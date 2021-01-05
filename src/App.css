@@ -84,3 +84,14 @@
   
 
 }
+
+.Title{
+  font-size: 27px;
+  font-style: bold;
+}
+
+.Director{
+  font-size: 20px;
+  font-style: bold;
+  margin-top: -10px;
+}

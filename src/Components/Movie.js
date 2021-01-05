@@ -57,8 +57,9 @@ class Movie extends Component {
                 )
                 : (
                     <section>
-                        <h2>{movie.title}</h2>
-                        <h4>{movie.director}</h4>
+                        <h1 className="Title">{movie.title}</h1>
+                        <h4>Directed By</h4>
+                        <h3 className="Director">{movie.director}</h3>
                         <button className="button2" onClick={this.toggleView}>Edit</button>
                         <button className="button2" onClick={this.deleteMovie}>Delete</button>
                     </section>
